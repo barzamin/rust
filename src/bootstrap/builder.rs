@@ -17,10 +17,10 @@ use std::fs;
 use std::hash::Hash;
 use std::ops::Deref;
 use std::path::{Path, PathBuf};
-use std::process::Command;
 use std::time::{Instant, Duration};
 use std::collections::HashMap;
 
+use build_helper::command_ext::Command;
 use compile;
 use install;
 use dist;
