@@ -13,8 +13,8 @@
 extern crate build_helper;
 
 use std::env;
-use std::process::Command;
 use build_helper::{run, native_lib_boilerplate};
+use build_helper::command_ext::Command;
 
 fn main() {
     let target = env::var("TARGET").expect("TARGET was not set");

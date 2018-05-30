@@ -19,10 +19,10 @@ use std::iter;
 use std::fmt;
 use std::fs::{self, File};
 use std::path::{PathBuf, Path};
-use std::process::Command;
 use std::io::Read;
 
 use build_helper::{self, output};
+use build_helper::command_ext::Command;
 
 use builder::{Kind, RunConfig, ShouldRun, Builder, Compiler, Step};
 use Crate as CargoCrate;
